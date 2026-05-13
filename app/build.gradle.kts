@@ -65,6 +65,11 @@ dependencies {
     implementation(libs.recyclerview)
     implementation(libs.activity)
 
+    // ── Navigation ───────────────────────────────────────────────────────────
+    implementation(libs.navigation.fragment.ktx)
+    implementation(libs.navigation.ui.ktx)
+    implementation(libs.lifecycle.viewmodel.ktx)
+
     // ── Kotlin Coroutines ────────────────────────────────────────────────────
     implementation(libs.kotlinx.coroutines.android)
 

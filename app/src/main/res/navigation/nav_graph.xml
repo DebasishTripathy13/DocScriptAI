@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/captureFragment">
+
+    <fragment
+        android:id="@+id/captureFragment"
+        android:name="com.docscriptai.app.CaptureFragment"
+        android:label="Capture">
+        <action
+            android:id="@+id/action_capture_to_report"
+            app:destination="@id/reportFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.docscriptai.app.ReportFragment"
+        android:label="Report" />
+
+</navigation>
